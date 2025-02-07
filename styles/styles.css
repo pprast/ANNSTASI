@@ -1,0 +1,275 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    font-family: Evolventa, sans-serif;
+    color: #fff;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Меню */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    z-index: 1000;
+    transition: ease-in background-color 0.4s;
+}
+
+.menu.menu-scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Баннер */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/banner1.JPG');
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+}
+
+.banner-text {
+    text-align: center;
+    max-width: 80%;
+}
+
+.banner h1 {
+    font-family: 'IntroDemo-BlackCAPS', sans-serif;
+    font-size: 150px;
+    font-weight: normal;
+    letter-spacing: 50px;
+}
+
+.banner p {
+    font-family: 'Evolventa', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.banner p.banner_desc {
+    font-size: 10px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+}
+
+.banner-text p {
+    font-family: 'Evolventa', sans-serif;
+}
+
+/* Второй блок */
+.second-block {
+    color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.first-text {
+    font-family: 'Evolventa', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.second-text {
+    font-family: 'IntroDemo-BlackCAPS', sans-serif;
+    font-size: 28px;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+}
+
+.third-text {
+    font-family: 'IntroDemo-BlackCAPS', sans-serif;
+    font-size: 48px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* Блок с изображением */
+.image-block {
+    width: 100%;
+    height: auto;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+}
+
+/* Баннер 2 */
+.banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/banner2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner2 h1 {
+    font-family: 'IntroDemo-BlackCAPS', sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    letter-spacing: 50px;
+}
+
+.banner2 p {
+    font-family: 'Evolventa', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.banner2 p.banner_desc {
+    font-size: 10px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+}
+
+/* Карусель */
+.carousel-block {
+    height: 100vh;
+    align-content: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin: 50px auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s linear;
+}
+
+.carousel img {
+    width: 25%;
+    flex-shrink: 0;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Прайс */
+.price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Контейнер с фоном */
+.background-section {
+    background-image: url('../img/banner3.JPG'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Чтобы изображение растягивалось на весь блок */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Без повторений */
+    padding: 50px 0; /* Отступы сверху и снизу для внутреннего контента */
+}
+
+.content-block {
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content-block-4 {
+    justify-content: flex-end;
+}
+
+.content-block-5 {
+    justify-content: center;
+}

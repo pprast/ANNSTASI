@@ -1,0 +1,59 @@
+/* Подключаем все шрифты Intro */
+
+@font-face {
+    font-family: 'IntroDemo-BlackCAPS';
+    src: url('../fonts/IntroDemo-BlackCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntroDemo-BlackInlineCAPS';
+    src: url('../fonts/IntroDemo-BlackInlineCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntroDemoCond-BlackCAPS';
+    src: url('../fonts/IntroDemoCond-BlackCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntroDemoCond-LightCAPS';
+    src: url('../fonts/IntroDemoCond-LightCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Подключаем все шрифты Evolventa */
+
+@font-face {
+    font-family: 'Evolventa';
+    src: url('../fonts/Evolventa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evolventa';
+    src: url('../fonts/Evolventa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evolventa';
+    src: url('../fonts/Evolventa-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Evolventa';
+    src: url('../fonts/Evolventa-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
