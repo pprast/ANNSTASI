@@ -146,7 +146,7 @@
 
     /* Прайс */
     .price-block {
-        height: auto;
+        /* height: auto; */
         padding: 20px;
     }
 
