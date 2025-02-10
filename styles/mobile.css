@@ -1,0 +1,222 @@
+@media (max-width: 1024px) {
+    .menu ul {
+        gap: 50px;
+    }
+    .banner h1 {
+        font-size: 100px;
+        letter-spacing: 30px;
+    }
+
+    .banner2 h1 {
+        font-size: 100px;
+        letter-spacing: 30px;
+    }
+
+    .banner p {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Скрываем стандартное меню */
+    .menu {
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Бургер-меню */
+    .burger-menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .burger-menu div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+    }
+
+    /* Выпадающее меню */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .mobile-nav.active {
+        right: 0;
+    }
+
+    .mobile-nav a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+
+    /* Адаптация баннера */
+    .banner {
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+
+    .banner2 h1 {
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+
+    .banner p {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .banner p.banner_desc {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    /* Адаптация текстовых блоков */
+    .second-block {
+        padding: 20px;
+        height: auto;
+    }
+
+    .first-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+
+    .second-text {
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .third-text {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    /* Адаптация изображений */
+    .image-block img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Карусель */
+    .carousel-container {
+        width: 90%;
+    }
+
+    .carousel img {
+        width: 80%; /* Отображаем одно изображение за раз */
+    }
+
+    .carousel-button {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    /* Прайс */
+    .price-block {
+        height: auto;
+        padding: 20px;
+    }
+
+    .download-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    /* Секция с фоном */
+    .background-section {
+        padding: 20px 0;
+    }
+
+    .content-block {
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Контакты */
+    .second-block h2.second-text,
+    .second-block h3.third-text {
+        font-size: 20px;
+    }
+
+    .second-block p.first-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .burger-menu {
+        width: 35px;
+        height: 35px;
+    }
+
+    .burger-menu div {
+        width: 25px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .banner2 h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .banner p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .second-text {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .third-text {
+        font-size: 28px;
+    }
+
+    .first-text {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .download-button {
+        font-size: 12px;
+    }
+}
