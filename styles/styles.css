@@ -175,7 +175,7 @@ html {
 
 /* Карусель */
 .carousel-block {
-    height: 100vh;
+    /* height: 100vh; */
     align-content: center;
 }
 
