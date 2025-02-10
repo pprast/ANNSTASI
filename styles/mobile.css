@@ -38,6 +38,9 @@
         align-items: center;
         cursor: pointer;
         z-index: 1001;
+        background-color: #0000008f;
+        border-radius: 5px;
+        padding: 5px;
     }
 
     .burger-menu div {
@@ -180,7 +183,7 @@
     }
 
     .burger-menu div {
-        width: 25px;
+        width: 20px;
     }
 
     .banner h1 {
